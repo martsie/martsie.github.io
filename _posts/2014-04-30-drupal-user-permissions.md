@@ -57,3 +57,8 @@ In the below example we use a combination of `hook_node_access` and `user_acc
 
 By default, Drupal’s menu router system uses user access to determine whether or not a user is permitted to view a specific page. Below is an example of a custom menu item and page callback at the url /my-custom-page that will only be shown to users with your custom permission above.
 
+{% gist 56e4c6850ea19ea5cfc637b9663a9684 %}
+
+### Views, panels and contexts
+
+Views, panels and contexts all have their own integration with the permissions system in Drupal allowing you fine control over what is shown to end users. In general, using permissions is better than using roles directly as it allows you more control and flexibility in the long run at the expense of having to define permissions for each task you want to control access to.
