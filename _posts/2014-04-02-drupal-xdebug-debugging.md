@@ -61,3 +61,35 @@ Before you start debugging you'll need to download an Xdebug plugin for your bro
 1. Visit /node on your local instance of the site and, in your browser of choice, enable Xdebug by clicking on the small bug icon in the address bar (Chrome) or status bar (Firefox).
 1. Refresh the page and PHP Storm steals focus with its debug window show at the bottom of the project workspace preventing the page from loading.
 1. You can now inspect variables using the the variables tab of the debug panel as well as step through the code by clicking the step through button above the debug panel that looks like two dots, one underneath the other with an arrow joining them.
+
+### Devel vs Xdebug: Pros and Cons 
+
+#### Devel
+
+##### Pro's
+
+-  Can be used without a fully fledge IDE or IDE extension.
+-  Can be easily used on remote development setups.
+-  Easy to understand for beginners, simply call the dpm or kpr functions anywhere in the Drupal code base and you'll get a result.
+
+##### Con's
+
+-  No step through.
+-  Whole page load has to occur for developer information to be available.
+-  Developers can easily accidentally leave dpm's and kpr's within code, crashing production sites.
+-  Adding code to core and contributed module files should be done with great care and reverted immediately after debugging is complete.
+
+#### Xdebug
+
+##### Pro's
+
+-  Step through helps you advance line by line through the code base waiting for fatal crashes and monitoring variables as they change.
+-  Backtrace allows you to see exactly how a breakpoint was reached.
+-  Program execution is paused during debugging drastically decreasing the time it takes to get debug information.
+-  Better variable drilling for complex classes and recurring values.
+-  Doesn't require switching between source code and browser render, code is debugged directly in the code editor.
+
+##### Con's
+
+-  Difficult to set up on remote development environments.
+-  Requires an IDE or extension which can slow down your development environment.
