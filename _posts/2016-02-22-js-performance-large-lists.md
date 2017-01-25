@@ -3,7 +3,7 @@ layout: post
 title: Real world JavaScript performance of large element lists
 ---
 
-At Rome2rio we're working on improving the front-end performance of our large booking ticket lists which present upwards of 150 combinations to users. When considering front-end performance we consider both the DOM speed as well as the Javascript execution time.
+At [Rome2rio](https://www.rome2rio.com) we're working on improving the front-end performance of our large booking ticket lists which present upwards of 150 combinations to users. When considering front-end performance we consider both the DOM speed as well as the Javascript execution time.
 
 ### The test
 The structure of the test I wrote on JsFiddle is simple. It creates DOM nodes using native JavaScript document.createElement with 15 children (each containing an image and some text) and appends them to screen to be shown to the user - exactly how a list of results would be displayed to an end user. The test uses requestAnimationFrame to gradually scroll the page 10,000 pixels down to simulate user action.
@@ -25,3 +25,5 @@ Build-on-append manages to spread the build and append operations across the ent
 
 ![Creating and appending large lists](/images/complex-lists-browser-perf.png)
 
+### Conclusion
+Although appending to the dom is expensive, preparing dom elements in memory is as expensive. By far the best option as the user's computer will only ever do as much computing power as is necessary to display the results however it comes at the cost of possibly reducing frame-rate during the scroll operation.
