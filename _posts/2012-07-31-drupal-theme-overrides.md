@@ -36,12 +36,14 @@ Instead of copying all the code from [http://api.drupal.org/api/drupal/includes
 
 1. In your template.php create a new function called YOUR_THEME_NAME_textfield that has a single argument called '&$variables'. Our theme will be called my_awesome_theme for the purposes of this tutorial.
 ```
+<?php
 function my_awesome_theme_textfield(&$variables) {
   // My awesome theme code here.
 }
 ```
 1. Instead of building a textfield from scratch, lets return the code that Drupal already provides using the variables Drupal is passing to us ...
 ```
+<?php
 function my_awesome_theme_textfield(&$variables) {
   $output = theme_textfield($variables);
   return $output;
@@ -49,6 +51,7 @@ function my_awesome_theme_textfield(&$variables) {
 ```
 1. Now lets enclose the output returned by our function with some spans...
 ```
+<?php
 function my_awesome_theme_textfield(&$variables) {
   $output = '<span class="my-awesome-textfield-wrapper"><span class="textfield-wrapper-inner">';
   $output .= theme_textfield($variables);
