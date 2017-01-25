@@ -8,6 +8,7 @@ One of the great 'new' features of Drupal 7 is the ability to use AJAX commands 
 In this tutorial we're going to create a simple and lightweight module that loads some content into a predefined page. Creating a module is pretty simple stuff but if you get lost, check out my [Super simple custom module](http://interactivejunky.com/blog/super-simple-custom-module) tutorial.
 
 --- 
+
 ### From the beginning: hook_menu and nojs
 Start by creating a custom module and enabling it. Happy days. The next step is to go ahead and define three new menu paths in hook_menu which will be:
 
@@ -20,11 +21,13 @@ It's very important to use /nojs and /ajax somewhere in your URL no matter w
 {% gist daae1e971809656fe6b136753d112e65 %}
 
 --- 
+
 ### The Callbacks
 
 Right, so hook_menu tells Drupal which function names to call when each path is accessed using the 'callback' parameter but we still need to define those functions in our module so that Drupal has something to run. This is where the magic happens...
 
 --- 
+
 ### The Callbacks: The trigger page
 
 Lets start with the trigger page which as you remember is the page that will contain a solitary link to execute our marvelous AJAX commands. This function needs to do 3 things and they are ...
@@ -38,6 +41,7 @@ The best part is that each of those 3 things only takes one line of code to do (
 {% gist 9b0ad580db32ec4915c6d0031600ecea %}
 
 --- 
+
 ### The Callbacks: The AJAX response
 
 This is where we get down and dirty, and this is the whole reason for this tutorials existence ... ready for it? AJAX Commands! AJAX Commands are so simple it hurts however their documentation (available at <http://api.drupal.org/api/drupal/includes%21ajax.inc/group/ajax_commands/7>) can be a bit daunting for a newbie. In this callback we only need to do 3 things (and you guessed it, each of them is only a single line of code).
@@ -49,6 +53,7 @@ This is where we get down and dirty, and this is the whole reason for this tutor
 {% gist cabf7f3940e61609dbbe12c3e3a41746 %}
 
 --- 
+
 ### The Callbacks: The fallback
 
 Undeniably the most boring, some may say most important, part of this tutorial is providing a fallback for users without JavaScript enabled in their browser (and some search engines). It's not even worth explaining this one.
@@ -56,6 +61,7 @@ Undeniably the most boring, some may say most important, part of this tutorial i
 {% gist 78f6ff1468482392a022e64fd8e062f9 %}
 
 --- 
+
 ### The JavaScript (not too much I promise)
 
 In Drupal JavaScript can be hard to pull of cleanly. There's a few things you need to know about jQuery scope and Drupal behaviors to full understand this part and you can read all about that in my tutorial [JavaScript and jQuery the Drupal way](http://www.codesidekick.com/blog/ajax-commands-drupal-7#).
@@ -65,6 +71,7 @@ Because we've defined our AJAX commands in our callback and we're using the dru
 If you wanted to apply Drupal.ajax to more than one link on a page you're best bet would be to target the links using a jQuery $.each() loop however for the purposes of our quick and dirty demo, we're going to be targeting a single element using an ID.
 
 #--- 
+
 ### Note
 
 You can also bypass the need for custom JavaScript all together by using the class 'use-ajax' on your link (which Drupal will pick up automatically however this will remove the ability to customise your before/success callbacks and you won't get the 'tap' event on mobile devices.
@@ -72,6 +79,7 @@ You can also bypass the need for custom JavaScript all together by using the cla
 {% gist ac005459403304a59e413d3ecfd06fb7 %}
 
 --- 
+
 ### Further reading
 
 Drupal 7's AJAX commands are practical, stable, clean and simple and I'd really like to see more developers leveraging them and creating some really cool AJAX driven Drupal sites. This tutorial is completely basic but I hope it's at least got you curious about exploring the documentation pages (<http://api.drupal.org/api/drupal/includes%21ajax.inc/group/ajax_commands/7>) and doing AJAX the 'Drupal way'.

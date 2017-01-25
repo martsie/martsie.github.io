@@ -6,16 +6,19 @@ title: Using Backbone.js with CoffeeScript
 During an interview process recently I was asked to create a CoffeeScript powered AJAX widget for displaying external content. Having never used CoffeeScript before I decided to go about learning it in a completely test driven way instead of the standard of the usual “hack a few things together and recover” way I’ve done in the past.
 
 --- 
+
 ### What is QUnit?
 There's a whole set of JavaScript testing frameworks out there, [QUnit](https://qunitjs.com/) is one of the classics. Developed in 2008 as part of jQuery by John Resig it's since been redeveloped as a standalone and pretty simple to use library.
 
 --- 
+
 ### Unit testing a CoffeeScript class method
 Here’s a super basic example of a CoffeeScript class...
 
 {% gist 2c799761f82e06f075785ed7e4a2c795 %}
 
 --- 
+
 ### Some features of this class
 -   **The Class is in global scope** which you can see using the @ symbol at the beginning of the class name. If you don't do this your test will not be able to access the class you're testing if you compile them into different JavaScript files (which you should do). There are a few ways around this including having a Public app scope or compiling your app into your tests however this is the simple example and it's not entirely 'wrong' just simple.
 -   The first and last names have default values
@@ -27,6 +30,7 @@ Moving on to the test, in a separate CoffeeScript file use...
 {% gist 6df597dcb175d1d134c124ebfda0ae1b %}
 
 --- 
+
 ### Let's deconstruct this test
 -   First we define the QUnit module. This groups tests together, especially useful when you're testing multiple classes in a larger project.
 -   Line 3 has the printed name of the test as it will appear in the list, and it will be called with no arguments in this example.
@@ -34,6 +38,7 @@ Moving on to the test, in a separate CoffeeScript file use...
 -   The last line asserts that the fullName method outputs the full name in the proper format.
 
 --- 
+
 ### Asyncronous assertions
 It's difficult to get very far in a JavaScript application without encountering an Asynchronous method, thankfully with QUnit it's very easy to test those as well.
 
@@ -54,6 +59,7 @@ Breaking apart this test...
 -   Line 8 executes the method and immediately defines a callback function which, when triggered by the timeout, will create a pass assertion and tell QUnit it has finished.
 
 --- 
+
 ### What about multiple Async assertions?
 Depending on which school of thought you subscribe to, you may or may not believe multiple assertions in a test are a sign of bad code. Regardless of what you believe here's how to do multiple Asynchronous assertions...
 
