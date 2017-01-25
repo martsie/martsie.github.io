@@ -5,6 +5,7 @@ title: Database independent Views 3 custom field handlers
 
 Views has so many convenient field handlers that almost all use cases can be covered using the standard set however there are times when you may need to display custom or specially formatted data in a view row without resorting to template hacking or views hooking.
 
+--- 
 ### Avoid using 'Global: custom text' fields for dynamic content
 
 ![](/images/views-avoidcustomfields_0.jpg)
@@ -13,6 +14,7 @@ The most convincing use case of **'Global: Custom text' fields** to me is comb
 
 {% gist 7163da0a8e0e2cd84235971ed27ada53 %}
 
+--- 
 ### Creating a custom views field handler
 
 Views field handlers are defined using PHP classes that extend views_handler_field or a subclass of it. To create a views handler class:
@@ -24,15 +26,18 @@ Views field handlers are defined using PHP classes that extend views_handler_fie
 
 {% gist 0312f00be38ebc52d4fb6dc2391d6a84 %}
 
+--- 
 ### Defining your custom view handler
 In order for views to acknowledge the existence of your views handler you'll need to define it within a file called *my_custom_module.views.inc* in the root module directory.
 
 {% gist 05171347b09e57ee47a72885fe5beacf %}
 
+--- 
 ### Telling views about your module
 Finally, for views to pick up your newly created include file, you'll have to invoke the Views API hook in your .module file. You can optionally specify folders within your module for views to look in if you wish, however if you're storing the my_custom_module.views.inc file within your root module folder you only need to include the following code.
 
 {% gist 5ac13e4985eb2b3eb2f56c48052144b4 %}
 
+--- 
 ### Add your custom field to a view
 Before you continue, clear the Drupal cache so that the last two steps have been picked up by Views. Next visit the view you want to edit (or create a new one) and, when adding a field, your custom field should appear in the list. Simple!

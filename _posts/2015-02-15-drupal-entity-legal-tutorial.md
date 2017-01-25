@@ -11,6 +11,7 @@ Most websites I've personally worked on for clients have had, at minimum, a Term
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Syuqy_23L3M" frameborder="0" allowfullscreen style="max-width:100%"></iframe>
 
+--- 
 ### Why use versioned documents?
 
 ![An example of basic legal versioning](/images/entity-legal-map-overview.png)
@@ -23,6 +24,7 @@ If, for some reason, version 3 is rolled back to version 2 User D will need to b
 
 Finally, if legal action does occur against your company, wouldn't it be great to see which versions of the agreement the user suing you had agreed to? Entity Legal provides a full audit trail with the date of acceptances.
 
+--- 
 ### Create a new legal document
 ![](/images/entity-legal-add.png)
 
@@ -34,41 +36,50 @@ To create a new legal document, navigate to
 
 and click '+ Add'.
 
+--- 
 ### Setting up your document
 ![Add document screen](/images/entity-legal-add-edit.png)
 
 The 'Add legal document' screen contains the following settings:
 
-#### Administrative label
+#--- 
+### Administrative label
 
 This is for editors eyes only, and will not be shown to the end user. You can give it any internal code name you wish, however the machine name will be used for the default path and for css classes.
 
-#### New users
+#--- 
+### New users
 
 When new users go to sign up to the site, do you want to force them to agree to the document? If so there are a couple of methods for displaying it on the user registration form and you can create your own using the method API. **This setting can be changed at any time.**
 
-#### Existing users
+#--- 
+### Existing users
 
 When existing users log into the site and they haven't accepted the most recent legal document of this type you can notify them, or force redirect them to the document, until they accept. Once again **this settings can be changed at any time** so no need to set it just yet.
 
+--- 
 ### The version edit screen
 
 ![Terms and Conditions v1](/images/entity-legal-tcs-v1.png)
 
 Next we'll create the first version for this document. Everything here will be public facing so make sure you enter exactly what your users should see.
 
-#### Title & machine name
+#--- 
+### Title & machine name
 
 This is pretty self-explanatory. The title is displayed to end users and the machine name is used internally for classes as well as programatic referencing.
 
-#### Document text
+#--- 
+### Document text
 
 Document text can be added in any available input format. Note that this is not revisioned, so if you make a major change it's best to create a new version instead of modify an existing version.
 
-#### Acceptance label
+#--- 
+### Acceptance label
 
 The acceptance label is what's placed next to the agreement checkbox on the document page.
 
+--- 
 ### Permissions
 
 ![Permissions page](/images/entity-legal-permissions_0.png)
@@ -79,6 +90,7 @@ Visit *admin/people/permissions* and find your legal document and enable the a
 
 **Important:** Always give at least 'view' permissions to users you are requiring to accept the document otherwise they'll be presented with an access denied page instead of your legal document.
 
+--- 
 ### Managing multiple versions
 
 ![The document overview page](/images/entity-legal-multiple-versions_0.png)
@@ -87,6 +99,7 @@ Once you've added more than one version you'll need to choose which version is y
 
 The radio on the left corresponds to which version is the current, public-facing one that users must accept. You can change it at any time by selecting a different version and clicking *Save* however by doing this you may not only be presenting the new document to signups but also presenting it to existing users, depending on your settings.
 
+--- 
 ### Managing acceptances using Views
 
 ![The acceptance page](/images/entity-legal-acceptances_0.png)
@@ -95,6 +108,7 @@ Entity legal uses the Entity API to power it's document management system and th
 
 You could also fairly easily create a view for displaying a users own acceptances on their profile page or another area on your site. Acceptances themselves are Entities and allow for a lot of modification by developers familiar with Entity API - have a look at the `EntityLegalDocument` and `EntityLegalDocumentAcceptance` classes for some common setters and getters if you're interested in tinkering.
 
+--- 
 ### Conclusion
 
 Entity Legal provides a fairly easy to use but powerful legal document management system that could be useful down the track if your business grows or there's risk of litigation. By keeping users up to date with changing terms and conditions you are doing the 'right thing' as many sites often include a clause stipulating that they can change the terms and conditions at will without the user having to re-agree. Sites built in commerce, in particular, can benefit from having order conditions agreed too at different stages during checkout without needing a user to re-agree to the same document twice.

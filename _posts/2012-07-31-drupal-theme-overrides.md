@@ -5,9 +5,11 @@ title: Theme override functions - beautify breadcrumbs, lists and form elements 
 
 Drupal offers developers highly flexible methods of modifying and overriding system functions and the theming layer is no exception. Drupal theming isn't just an exercise in CSS and HTML ... oh no ... it can also be an exercise in, you guessed it, PHP.
 
+--- 
 ### First things first: the template.php file
 Before we start we need to know where our code will be going. Theme overrides should be placed in the template.php file in the root folder of your active theme so if you don't already have a template.php file create one. Sometimes, in order to manage large amounts of theme overrides, developers use includes to load in theme overrides to template.php though it's not necessary for the purposes of this tutorial. Make sure your template.php file begins with <?php.
 
+--- 
 ### Example 1: Overriding the Drupal breadcrumb
 So you want to use images instead of '»' arrows in your breadcrumb list? Or maybe you want the wrapper surrounding your breadcrumbs to have a different class? The wrong way to go about this would be to use a jQuery hack or a CSS class (and I've seen lots of people do this). The other thing I've seen a lot of developers do is go back to their designer or project manager and say "sorry can't be done in Drupal" which gives Drupal a bad name and makes baby Dries cry (Drupal reference there ... Dries is like our Jesus for those that don't know). The cleanest way of making the changes you need is:
 
@@ -24,11 +26,13 @@ Sometimes the changes you make may require trudging through the variables passed
 
 Of course if you get really adventurous you can go as far as reformatting your breadcrumbs as an unordered list or even a select list. If for some reason your designer wanted to use images uploaded into the nodes or taxonomy terms in the breadcrumb trail you could load the images in from the entities in to the breadcrumb trail. All without hacks just clean Drupal code.
 
+--- 
 ### Example 2: Messing with lists
 In this example we're going to override the theme function for lists in order to add a span inside every list element on our Drupal site. It's pretty common for designs to require extra markup in order to work with older or poorer browsers (*cough* Internet Explorer *cough*) and using spans is a good way of avoiding complex poly-fills to get your site looking the way it should in those browsers.
 
 {% gist 04e5a9983305fa0aba54ebb9b00b71e7 %}
 
+--- 
 ### Example 3: Fancy textfields
 So your designer has decided that all the textfields on your Drupal site need to have rounded corners and your client has decided that all your textfields will need to maintain those rounded corners in Internet Explorer 6, 7 and 8 regardless of whether the user has JavaScript enabled or disabled. Even if you could use CSS3 PIE as a polyfill on forms with large amounts of fields the performance would be seriously impaired and painful for your users ageing CPU's. Why not wrap every textfield in a couple of divs and use some graphics supplied by your (asshole) designer? That's exactly what we're going to do.
 
@@ -63,6 +67,7 @@ function my_awesome_theme_textfield(&$variables) {
 
 Whenever you're simply creating wrapper divs for Drupal elements this method allows you to keep your code clean whilst getting in the extra markup you need.
 
+--- 
 ### A word of warning (be careful about reducing or replacing markup)
 Before you get too excited there's some things that you should know ... yes most themers agree that Drupal outputs some pretty nasty and convoluted markup but reducing the markup using theme overrides is risky business if you're relying on community and core JavaScript to power your site. In fact I'd go as far as to say that reducing markup or re-labelling classes is against Drupal coding standards but in the end it's up to you and demands of your project. Also, if you can use preprocess and process functions to make the changes you need reliably and cleanly then use them instead.
 
