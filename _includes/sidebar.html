@@ -10,13 +10,14 @@
     </div>
 
     <nav class="sidebar-nav">
+      <span class="sidebar-nav-item">Currently working with the team at <a href="https://www.rome2rio.com">Rome2rio</a> in beautiful Melbourne, Australia.</span>
+      
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
 
       {% comment %}
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
-      <span class="sidebar-nav-item">Currently working with the team at <a href="https://www.rome2rio.com">Rome2rio</a> in beautiful Melbourne, Australia.</span>
       
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
