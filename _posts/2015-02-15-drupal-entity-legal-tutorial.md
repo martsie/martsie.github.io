@@ -93,7 +93,7 @@ The radio on the left corresponds to which version is the current, public-facing
 
 Entity legal uses the Entity API to power it's document management system and therefore is fully compatible with the Views module. By default, if you have Views enabled, on the legal document overview page there is an *Acceptances* tab page built in views. The views displays all acceptances for each legal document version and the date that the version was accepted. You can further extend this by overriding the view and providing any extra columns you'd like.
 
-You could also fairly easily create a view for displaying a users own acceptances on their profile page or another area on your site. Acceptances themselves are Entities and allow for a lot of modification by developers familiar with Entity API - have a look at the EntityLegalDocument and EntityLegalDocumentAcceptance classes for some common setters and getters if you're interested in tinkering.
+You could also fairly easily create a view for displaying a users own acceptances on their profile page or another area on your site. Acceptances themselves are Entities and allow for a lot of modification by developers familiar with Entity API - have a look at the `EntityLegalDocument` and `EntityLegalDocumentAcceptance` classes for some common setters and getters if you're interested in tinkering.
 
 ### Conclusion
 
