@@ -21,7 +21,7 @@ The most convincing use case of **'Global: Custom text' fields** to me is comb
 
 Views field handlers are defined using PHP classes that extend views_handler_field or a subclass of it. To create a views handler class:
 
-1. Create a custom module (if you don't know how visit <http://interactivejunky.com/blog/super-simple-custom-module>).
+1. Create a custom module (if you don't know how visit <https://martsie.github.io/2012/06/29/drupal-super-simple-module/>).
 1. Create a folder inside your custom module called *includes* and add a new file called views_handler_my_custom_field.inc .
 1. Copy the code below into the file to create a basic skeleton for your handler.
 1. In your modules .info file add the line `files[] = includes/views_handler_my_custom_field.inc`.

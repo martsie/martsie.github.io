@@ -5,7 +5,7 @@ title: AJAX commands in Drupal 7
 
 One of the great 'new' features of Drupal 7 is the ability to use AJAX commands outside of FORM API allowing back-end and front-end developers to leverage high performance and solid JSON responses. JSON AJAX commands can be used simply and solidly in Drupal 7 to update blocks, nodes, pages and basically any element of a page with better performance on the client and server-side then loading AHAH page fragments.
 
-In this tutorial we're going to create a simple and lightweight module that loads some content into a predefined page. Creating a module is pretty simple stuff but if you get lost, check out my [Super simple custom module](http://interactivejunky.com/blog/super-simple-custom-module) tutorial.
+In this tutorial we're going to create a simple and lightweight module that loads some content into a predefined page. Creating a module is pretty simple stuff but if you get lost, check out my [Super simple custom module](https://martsie.github.io/2012/06/29/drupal-super-simple-module/) tutorial.
 
 --- 
 
@@ -63,8 +63,6 @@ Undeniably the most boring, some may say most important, part of this tutorial i
 --- 
 
 ### The JavaScript (not too much I promise)
-
-In Drupal JavaScript can be hard to pull of cleanly. There's a few things you need to know about jQuery scope and Drupal behaviors to full understand this part and you can read all about that in my tutorial [JavaScript and jQuery the Drupal way](http://www.codesidekick.com/blog/ajax-commands-drupal-7#).
 
 Because we've defined our AJAX commands in our callback and we're using the drupal.ajax core library the JavaScript is massively reduced (and sparkly clean too). As an extra special treat I've included event settings that makes the link respond to tap events on Android and IOS (without this you'd need a double tap to 'click' the link).
 
