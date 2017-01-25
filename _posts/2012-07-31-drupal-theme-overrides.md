@@ -35,27 +35,27 @@ So your designer has decided that all the textfields on your Drupal site need to
 Instead of copying all the code from [http://api.drupal.org/api/drupal/includes%21form.inc/function/theme_text...](http://api.drupal.org/api/drupal/includes%21form.inc/function/theme_textfield/7) into our template.php file and renaming the function we're going to use a slightly different, cleaner and simpler approach.
 
 1. In your template.php create a new function called YOUR_THEME_NAME_textfield that has a single argument called '&$variables'. Our theme will be called my_awesome_theme for the purposes of this tutorial.
-`
+```
 function my_awesome_theme_textfield(&$variables) {
   // My awesome theme code here.
 }
-`
+```
 1. Instead of building a textfield from scratch, lets return the code that Drupal already provides using the variables Drupal is passing to us ...
-`
+```
 function my_awesome_theme_textfield(&$variables) {
   $output = theme_textfield($variables);
   return $output;
 }
-`
+```
 1. Now lets enclose the output returned by our function with some spans...
-`
+```
 function my_awesome_theme_textfield(&$variables) {
   $output = '<span class="my-awesome-textfield-wrapper"><span class="textfield-wrapper-inner">';
   $output .= theme_textfield($variables);
   $output .= '</span></span>';
   return $output;
 }
-`
+```
 1. Clear your cache and voila, all textfields on your Drupal site will now be surrounded by two spans, one with the class 'my-aewsome-textfield-wrapper' and the other with the class 'textfield-wrapper-inner'.
 
 Whenever you're simply creating wrapper divs for Drupal elements this method allows you to keep your code clean whilst getting in the extra markup you need.
