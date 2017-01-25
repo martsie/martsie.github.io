@@ -11,16 +11,12 @@ Being able to debug core, contributed and custom code efficiently and verbosely 
 
 By far the easiest way to start debugging on a Drupal site is to use Devel's debugging functions dpm() (Drupal Print Message) and kpr() (Krumo Print Readable).
 
-#--- 
-
-### To start using Devel
+#### To start using Devel
 
 1. Download a copy of the [Devel module](https://drupal.org/project/devel) and enable it on your development environment.
 2. After you've enable Devel visit the admin page at **/admin/config/development/devel** and change the 'Error handlers' select option to 'Kumo backtrace above the rendered page'. This will give provide you with in-depth back-traces whenever critical errors occur on your site and allow you to better understand what's causing errors to happen in the first place.
 
-#--- 
-
-### Your first debug: dpm()
+#### Your first debug: dpm()
 
 1. Make sure you're logged in as an administrator or your user account has the permission 'Access developer information' enabled.
 1. Edit *modules/node/node.module* and search for the function *node_build_content*.
@@ -29,9 +25,7 @@ By far the easiest way to start debugging on a Drupal site is to use Devel's deb
 1. You should now see an orange debug widget in the messages section of the site. You can drill down and inspect array and object values simply by clicking around.
 1. Remember to undo all your changes to *node.module* after you have finished debugging.
 
-#--- 
-
-### kpr()
+#### kpr()
 
 kpr() works similarly to dpm() however it doesn't accept a second argument for labelling and, instead of waiting for for the page to load and displaying the debug in the messages section of your site template, kpr prints the krumo debug widget the second it's called. kpr() is particularly useful when debugging fatal errors that prevent the page from loading far enough to display messages in the message area.
 
@@ -41,13 +35,10 @@ kpr() works similarly to dpm() however it doesn't accept a second argument for l
 
 Ever since I contracted for [Business Spectator](http://www.businessspectator.com.au/) I've been addicted to using Xdebug to debug code using PHP Storm as my IDE of choice. If you don't feel like forking out the cash for PHP Storm Netbeans, Eclipse and Sublime's xdebug_client all support Xdebug as well.
 
-#--- 
 
 ### Enabling Xdebug in your stack
 
-##--- 
-
-### Have MAMP Pro installed?
+#### Have MAMP Pro installed?
 
 1. Open MAMP Pro and, in the menu bar, select *File > Edit Template > PHP > {The current version you're using}*.
 1. Search the ini file for the word *xdebug*. You can open the search dialog by using [CMD+F]
@@ -56,13 +47,10 @@ Ever since I contracted for [Business Spectator](http://www.businessspectator.c
 1. Add the line *xdebug.remote_enable=1* below the line you just uncommented
 1. Save the file (CMD+S), close the file and click *Stop* and then *Start* in MAMP Pro to restart the server and refresh the settings.
 
-##--- 
 
-### No MAMP Pro?
+#### No MAMP Pro?
 
 There's documentation on how to install Xdebug on xAMP stacks at <http://xdebug.org/docs/install> for those without MAMP Pro setups.
-
-#--- 
 
 ### Get a helper extension for your browser of choice
 
@@ -71,8 +59,6 @@ Before you start debugging you'll need to download an Xdebug plugin for your bro
 -   **Chrome:** <https://chrome.google.com/webstore/detail/xdebug-helper/eadndfjplgieldjbigjakmdgkmoaaaoc?hl=en>
 -   **Firefox:** <https://addons.mozilla.org/en-US/firefox/addon/easy-xdebug/>
 -   **Manually:** You can force Xdebug to start a debugging session by appending the query string ?XDEBUG_SESSION_START=1 to any page url.
-
-#--- 
 
 ### Setting breakpoints and listening for connections in PHP Storm
 
@@ -86,34 +72,25 @@ Before you start debugging you'll need to download an Xdebug plugin for your bro
 
 ### Devel vs Xdebug: Pros and Cons 
 
-#--- 
+#### Devel
 
-### Devel
-
-##--- 
-
-### Pro's
+##### Pro's
 
 -  Can be used without a fully fledge IDE or IDE extension.
 -  Can be easily used on remote development setups.
 -  Easy to understand for beginners, simply call the dpm or kpr functions anywhere in the Drupal code base and you'll get a result.
 
-##--- 
-
-### Con's
+##### Con's
 
 -  No step through.
 -  Whole page load has to occur for developer information to be available.
 -  Developers can easily accidentally leave dpm's and kpr's within code, crashing production sites.
 -  Adding code to core and contributed module files should be done with great care and reverted immediately after debugging is complete.
 
-#--- 
 
-### Xdebug
+#### Xdebug
 
-##--- 
-
-### Pro's
+##### Pro's
 
 -  Step through helps you advance line by line through the code base waiting for fatal crashes and monitoring variables as they change.
 -  Backtrace allows you to see exactly how a breakpoint was reached.
@@ -121,9 +98,7 @@ Before you start debugging you'll need to download an Xdebug plugin for your bro
 -  Better variable drilling for complex classes and recurring values.
 -  Doesn't require switching between source code and browser render, code is debugged directly in the code editor.
 
-##--- 
-
-### Con's
+##### Con's
 
 -  Difficult to set up on remote development environments.
 -  Requires an IDE or extension which can slow down your development environment.

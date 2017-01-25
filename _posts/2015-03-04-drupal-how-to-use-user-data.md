@@ -23,16 +23,12 @@ If you don't feel like reading everything below, then feel free to jump on to th
 ### The Solution: $user->data
 The Drupal user object has a little known field automatically attached to it called 'data' which stores serialised settings for each user object in the database.
 
-#--- 
-
-### Advantages
+#### Advantages
 -   It's lightweight, queried with the original user object in the core bootstrap
 -   Available as early as hook_boot
 -   Available without installing any additional Drupal modules
 
-#--- 
-
-### Disadvantages
+#### Disadvantages
 -   Has no automatically defined front-end interface for displaying or editing data
 -   Not available as a condition in SQL select queries
 -   Can be abused by developers

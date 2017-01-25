@@ -45,21 +45,15 @@ and click '+ Add'.
 
 The 'Add legal document' screen contains the following settings:
 
-#--- 
-
-### Administrative label
+#### Administrative label
 
 This is for editors eyes only, and will not be shown to the end user. You can give it any internal code name you wish, however the machine name will be used for the default path and for css classes.
 
-#--- 
-
-### New users
+#### New users
 
 When new users go to sign up to the site, do you want to force them to agree to the document? If so there are a couple of methods for displaying it on the user registration form and you can create your own using the method API. **This setting can be changed at any time.**
 
-#--- 
-
-### Existing users
+#### Existing users
 
 When existing users log into the site and they haven't accepted the most recent legal document of this type you can notify them, or force redirect them to the document, until they accept. Once again **this settings can be changed at any time** so no need to set it just yet.
 
@@ -71,21 +65,15 @@ When existing users log into the site and they haven't accepted the most recent 
 
 Next we'll create the first version for this document. Everything here will be public facing so make sure you enter exactly what your users should see.
 
-#--- 
-
-### Title & machine name
+#### Title & machine name
 
 This is pretty self-explanatory. The title is displayed to end users and the machine name is used internally for classes as well as programatic referencing.
 
-#--- 
-
-### Document text
+#### Document text
 
 Document text can be added in any available input format. Note that this is not revisioned, so if you make a major change it's best to create a new version instead of modify an existing version.
 
-#--- 
-
-### Acceptance label
+#### Acceptance label
 
 The acceptance label is what's placed next to the agreement checkbox on the document page.
 

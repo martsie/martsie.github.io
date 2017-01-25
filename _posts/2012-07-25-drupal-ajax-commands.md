@@ -70,9 +70,7 @@ Because we've defined our AJAX commands in our callback and we're using the dru
 
 If you wanted to apply Drupal.ajax to more than one link on a page you're best bet would be to target the links using a jQuery $.each() loop however for the purposes of our quick and dirty demo, we're going to be targeting a single element using an ID.
 
-#--- 
-
-### Note
+#### Note
 
 You can also bypass the need for custom JavaScript all together by using the class 'use-ajax' on your link (which Drupal will pick up automatically however this will remove the ability to customise your before/success callbacks and you won't get the 'tap' event on mobile devices.
 
