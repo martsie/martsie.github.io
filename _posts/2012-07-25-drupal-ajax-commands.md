@@ -45,6 +45,7 @@ This is where we get down and dirty, and this is the whole reason for this tutor
 {% gist cabf7f3940e61609dbbe12c3e3a41746 %}
 
 ### The Callbacks: The fallback
+-------------------------------
 
 Undeniably the most boring, some may say most important, part of this tutorial is providing a fallback for users without JavaScript enabled in their browser (and some search engines). It's not even worth explaining this one.
 
