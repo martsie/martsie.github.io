@@ -7,7 +7,7 @@ On the project I'm working on at Rome2rio I'm currently implementing React Nativ
 
 ### Android's X-Requested-With headers
 
-It turns out that every network request issued by an Android app webview comes with the added bonus of an identifying header by the name of `X-Requested-With` with the value of the package name of your Android app. In our case it's `X-Requested-With=com.www.rome2rio.www.rome2rio`. That means that not only is the page requested with that additional header but all AJAX requests too.
+It turns out that every network request issued by an Android app webview comes with the added bonus of an identifying header by the name of `X-Requested-With` with the value of the package name of your Android app. In our case it's `X-Requested-With: com.www.rome2rio.www.rome2rio`. That means that not only is the page requested with that additional header but all AJAX requests too.
 
 ![x-request-with header in Chrome dev tools](/images/x-request-header.png)
 

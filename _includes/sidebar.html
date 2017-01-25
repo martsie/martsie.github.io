@@ -16,7 +16,8 @@
         The code below dynamically generates a sidebar nav of pages with
         `layout: page` in the front-matter. See readme for usage.
       {% endcomment %}
-
+      <span class="sidebar-nav-item">Currently working with the team at <a href="https://www.rome2rio.com">Rome2rio</a> in beautiful Melbourne, Australia.</span>
+      
       {% assign pages_list = site.pages %}
       {% for node in pages_list %}
         {% if node.title != null %}
@@ -26,7 +27,6 @@
         {% endif %}
       {% endfor %}
 
-      <span class="sidebar-nav-item">Currently working with the team at <a href="https://www.rome2rio.com">Rome2rio</a> in beautiful Melbourne, Australia.</span>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub profile</a>
       <a class="sidebar-nav-item" href="https://www.drupal.org/user/1633774">Drupal.org profile</a>
     </nav>
