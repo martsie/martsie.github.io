@@ -13,7 +13,7 @@ Most websites I've personally worked on for clients have had, at minimum, a Term
 
 ### Why use versioned documents?
 
-[![An example of basic legal versioning](/images/entity-legal-map-overview.png)]
+![An example of basic legal versioning](/images/entity-legal-map-overview.png)
 
 Look at the graphic above. When User's A and B joined in April 2014, they accepted version 1 of the terms and conditions. In July version 2 came out which is when User C joined and then the following year in January User D joined, accepting version 3.
 
@@ -24,7 +24,7 @@ If, for some reason, version 3 is rolled back to version 2 User D will need to b
 Finally, if legal action does occur against your company, wouldn't it be great to see which versions of the agreement the user suing you had agreed to? Entity Legal provides a full audit trail with the date of acceptances.
 
 ### Create a new legal document
-[![](/images/entity-legal-add.png)]
+![](/images/entity-legal-add.png)
 
 A legal document is a bit like a Node content type in that it does not contain anything user facing, but rather manages the configuration for the document.
 
@@ -35,7 +35,7 @@ To create a new legal document, navigate to
 and click '+ Add'.
 
 ### Setting up your document
-[![Add document screen](/images/entity-legal-add-edit.png)]
+![Add document screen](/images/entity-legal-add-edit.png)
 
 The 'Add legal document' screen contains the following settings:
 
@@ -53,7 +53,7 @@ When existing users log into the site and they haven't accepted the most recent 
 
 ### The version edit screen
 
-[![Terms and Conditions v1](/images/entity-legal-tcs-v1.png)]
+![Terms and Conditions v1](/images/entity-legal-tcs-v1.png)
 
 Next we'll create the first version for this document. Everything here will be public facing so make sure you enter exactly what your users should see.
 
@@ -71,7 +71,7 @@ The acceptance label is what's placed next to the agreement checkbox on the docu
 
 ### Permissions
 
-[![Permissions page](/images/entity-legal-permissions_0.png)]
+![Permissions page](/images/entity-legal-permissions_0.png)
 
 The only confusing part of this process is setting up permissions. Entity legal uses the core Drupal user permissions system to decide which users are allowed to view legal documents and which users must re-accept them.
 
@@ -81,7 +81,7 @@ Visit *admin/people/permissions* and find your legal document and enable the a
 
 ### Managing multiple versions
 
-[![The document overview page](/images/entity-legal-multiple-versions_0.png)]
+![The document overview page](/images/entity-legal-multiple-versions_0.png)
 
 Once you've added more than one version you'll need to choose which version is your current published version, and the one that users must agree to. On the document overview screen, in the *Current version* section there is a table with all your legal document versions and created/updated dates.
 
@@ -89,7 +89,7 @@ The radio on the left corresponds to which version is the current, public-facing
 
 ### Managing acceptances using Views
 
-[![The acceptance page](/images/entity-legal-acceptances_0.png)]
+![The acceptance page](/images/entity-legal-acceptances_0.png)
 
 Entity legal uses the Entity API to power it's document management system and therefore is fully compatible with the Views module. By default, if you have Views enabled, on the legal document overview page there is an *Acceptances* tab page built in views. The views displays all acceptances for each legal document version and the date that the version was accepted. You can further extend this by overriding the view and providing any extra columns you'd like.
 
