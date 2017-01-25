@@ -7,6 +7,6 @@ There are times when you're testing hook_update_N hooks and need to revert to a 
 
 With Drush you can quickly and easily reset the module schema using sql by using the following command:
 
-`drush sql-query "UPDATE system SET schema_version = 7001 WHERE name = 'my_custom_module';"`
+{% gist bab4f7a10b1b2a5364460b505fe323e9 %}
 
 where 7001 is the schema you want to reset to and my_custom_module is the name of the module you're changing.
