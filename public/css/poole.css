@@ -380,7 +380,7 @@ tbody tr:nth-child(odd) th {
 }
 .post-tags__tag {
   display: inline-block; 
-  background: #333;
+  background: #666;
   color: white;
   padding: 5px 10px;
   display: inline-block;
