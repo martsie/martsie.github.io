@@ -342,14 +342,17 @@ tbody tr:nth-child(odd) th {
 .post--list-item .post-title {
   margin: 0;
 }
-.post-image {
-  border-radius: 50%;
-  width: 80px;
+
+.post--list-item .post-date {
+  background: #303030;
+  color: white;
+  padding: 5px 10px;
   display: inline-block;
-  margin: 0;
-  vertical-align: middle;
-  margin: 0 15px 15px 0;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-top: 15px;
 }
+
 /* Blog post or page title */
 .page-title,
 .post-title,
@@ -364,14 +367,7 @@ tbody tr:nth-child(odd) th {
 /* Meta data line below post title */
 .post-date {
   display: block;
-  color: #9a9a9a;
-  background: #303030;
-  color: white;
-  padding: 5px 10px;
-  display: inline-block;
-  border-radius: 3px;
-  margin-bottom: 10px;
-  margin-top: 15px
+  color: #666;
 }
 
 .post-tags {
@@ -382,13 +378,24 @@ tbody tr:nth-child(odd) th {
 }
 .post-tags__tag {
   display: inline-block; 
-  background: #666;
-  color: white;
   padding: 5px 10px;
   display: inline-block;
   border-radius: 3px;
   margin-bottom: 10px;
   margin-top: 15px;
+  background: transparent;
+  border: 1px solid #666;
+  color: #666;
+}
+.post-image {
+  border-radius: 50%;
+  width: 100px;
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.post-meta {
+  overflow: hidden;
+  margin-bottom: 10px;
 }
 
 /* Related posts */
