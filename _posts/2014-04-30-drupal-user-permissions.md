@@ -1,6 +1,10 @@
 ---
 layout: post
 title: User permissions in Drupal
+tags:
+ - Drupal 7
+ - Security
+ - PHP
 ---
 
 In Drupal, the user permissions system plays a vital role in providing fine grained access to content and settings forms on a site. By default most modules, contributed and core, come with in built permissions for managing access to their features but it’s also easy to introduce your own permissions using hook_permission() and user_access(). Permissions can not only be used to restrict what pages visitors can view but also what parts of a page are rendered to a given user resulting in a safe and personalised experience for all your site visitors.

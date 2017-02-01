@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Drupal debugging&#58; Xdebug and Devel
+tags:
+ - Drupal
+ - PHP
+ - Xdebug
 ---
 
 Being able to debug core, contributed and custom code efficiently and verbosely is hugely important when developing with Drupal. The two main methods used in the industry are Xdebug and Devel DPM and both have strengths and weaknesses which will be discussed in this tutorial along with some information on how to get set up.

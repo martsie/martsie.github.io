@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Real world JavaScript performance of large element lists
+tags:
+ - JavaScript
+ - Performance
 ---
 
 At [Rome2rio](https://www.rome2rio.com) we're working on improving the front-end performance of our large booking ticket lists which present upwards of 150 combinations to users. When considering front-end performance we consider both the DOM speed as well as the Javascript execution time.

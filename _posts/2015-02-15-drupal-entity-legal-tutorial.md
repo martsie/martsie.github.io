@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Entity Legal - Legal Document Management for Drupal
+tags:
+ - Drupal 7
+ - Open Source
 ---
 
 Most websites I've personally worked on for clients have had, at minimum, a Terms and Conditions page or Terms of Use page. Recently on the brightday project ([http://brightday.com.au](http://brightday.com.au/)) I was tasked with creating a versionable, auditable and robust legal document framework for storing Financial Services Guides accepted by users and notifying those users when the guide had been updated. Because of how sensitive the data was I didn't think using Node, Rules and glue code would be clean enough so I created Entity Legal to solve this issue for us and for all Drupal devs out there.

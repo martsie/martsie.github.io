@@ -1,6 +1,11 @@
 ---
 layout: post
 title: AJAX commands in Drupal 7
+tags:
+ - Drupal 7
+ - PHP
+ - AJAX
+ - JavaScript
 ---
 
 One of the great 'new' features of Drupal 7 is the ability to use AJAX commands outside of FORM API allowing back-end and front-end developers to leverage high performance and solid JSON responses. JSON AJAX commands can be used simply and solidly in Drupal 7 to update blocks, nodes, pages and basically any element of a page with better performance on the client and server-side then loading AHAH page fragments.

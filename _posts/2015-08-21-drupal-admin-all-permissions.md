@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Give all user permissions to the admin role in Drupal
+tags:
+ - Drupal 7
+ - Security
+ - PHP
 ---
 
 I've seen, especially on older Drupal 7 websites, situations in which the default admin role has either not been set or the role has had to be changed. Changing the admin role in Drupal however doesn't automatically give the role all the permissions on the site - to do that you'll need to either use a macro to tick all the boxes on the admin/people/permissions form or use the following update script.

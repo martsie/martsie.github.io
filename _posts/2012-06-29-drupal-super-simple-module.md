@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Super simple custom Drupal 7 module
----
-
-Creating custom modules is handy for when you need to hook into and modify Drupal features or add new functionality without hacking core files or overloading your theme. Creating a custom module is really easy, in fact you only really need 2 files to get started...
-
+tags:
+ - Drupal 7
+ - PHP
+ - Beginners
 ---
 
 ### Create a folder

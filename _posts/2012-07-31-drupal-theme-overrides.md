@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Theme override functions - beautify breadcrumbs, lists and form elements in Drupal 7
----
-
-Drupal offers developers highly flexible methods of modifying and overriding system functions and the theming layer is no exception. Drupal theming isn't just an exercise in CSS and HTML ... oh no ... it can also be an exercise in, you guessed it, PHP.
-
+tags:
+ - Drupal 7
+ - Theming
+ - PHP
 --- 
 
 ### First things first: the template.php file

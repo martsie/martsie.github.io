@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Break out of the SimpleTest sandbox
+tags:
+ - Drupal 7
+ - Testing
+ - PHP
 ---
 
 One of the common elements of **every single successful web project in history** is thorough testing, whether manual or automated. Thankfully Drupal has a relatively painless out-of-the-box testing framework however it's biggest flaw is that it aims to do end-to-end testing using sandboxed environments -- which for most projects just doesn't make sense. Better yet there's no documentation on how to get out of the sandbox.

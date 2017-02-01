@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Using Backbone.js with CoffeeScript
+tags:
+ - CoffeeScript
+ - Backbone
+ - JavaScript
 ---
 
 If you want an example of just how elegant CoffeeScript can get, look no further then how it integrates with Backbone.js. In this tutorial we're creating a model and a collection in Backbone.js in it's simplest form, then expanding it to include API variable mapping - something you're going to have to do when integrating with API's in the future.

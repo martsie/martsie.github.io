@@ -1,6 +1,10 @@
 ---
 layout: post
 title: Testing in QUnit with CoffeeScript
+tags:
+ - CoffeeScript
+ - Testing
+ - JavaScript
 ---
 
 During an interview process recently I was asked to create a CoffeeScript powered AJAX widget for displaying external content. Having never used CoffeeScript before I decided to go about learning it in a completely test driven way instead of the standard of the usual “hack a few things together and recover” way I’ve done in the past.

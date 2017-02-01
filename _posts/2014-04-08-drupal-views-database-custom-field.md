@@ -1,6 +1,9 @@
 ---
 layout: post
 title: Database independent Views 3 custom field handlers
+tags:
+ - Drupal 7
+ - PHP
 ---
 
 Views has so many convenient field handlers that almost all use cases can be covered using the standard set however there are times when you may need to display custom or specially formatted data in a view row without resorting to template hacking or views hooking.

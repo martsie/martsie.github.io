@@ -1,6 +1,9 @@
 ---
 layout: post
 title: How to use the $user->data property in Drupal 7
+tags:
+ - Drupal 7
+ - PHP
 ---
 
 Everything you need to know about how to use the highly performant $user->data property whilst maintaining data integrity with a bit of best practise Single Responsibility Principle and Single-Entry, Single-Exit thrown in for good measure.

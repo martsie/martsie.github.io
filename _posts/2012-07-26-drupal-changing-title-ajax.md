@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Changing the page title with AJAX Commands in Drupal
+tags:
+ - Drupal 7
+ - AJAX
+ - PHP
+ - JavaScript
 ---
 
 So you've loaded that new AJAX fragment using AJAX commands but you want to change the page title too?
