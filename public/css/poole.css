@@ -374,6 +374,9 @@ tbody tr:nth-child(odd) th {
 
 .post-tags {
   list-style-type: none;
+  display: inline-block;
+  margin: 0 0 0 1px;
+  padding: 0;
 }
 .post-tags__tag {
   display: inline-block; 
