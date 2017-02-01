@@ -368,7 +368,6 @@ tbody tr:nth-child(odd) th {
 .post-date {
   display: block;
   color: #666;
-  margin-top: 10px;
 }
 
 .post-tags {
@@ -383,7 +382,7 @@ tbody tr:nth-child(odd) th {
   display: inline-block;
   border-radius: 3px;
   margin-bottom: 10px;
-  margin-top: 15px;
+  margin-top: 10px;
   background: transparent;
   border: 1px solid #666;
   color: #666;
