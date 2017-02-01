@@ -333,6 +333,26 @@ tbody tr:nth-child(odd) th {
   margin-bottom: 4em;
 }
 
+.post--list-item {
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ccc;
+}
+
+.post--list-item .post-title {
+  margin: 0;
+}
+
+.post--list-item .post-date {
+  background: #303030;
+  color: white;
+  padding: 5px 10px;
+  display: inline-block;
+  border-radius: 3px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
 /* Blog post or page title */
 .page-title,
 .post-title,
