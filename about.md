@@ -3,6 +3,7 @@ layout: page
 title: About
 ---
 
+<img src="/images/me.png" class="me-image">
 <p class="message">
 I'm a software developer specialising in UX working in Melbourne with a strong international portfolio. I've contracted in Australia and the UK (London) on projects big and small for various clients during the past 5 years and thrive in fresh, challenging and changing environments.
 </p>
