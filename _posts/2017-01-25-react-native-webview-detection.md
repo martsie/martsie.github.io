@@ -1,6 +1,11 @@
 ---
 layout: post
 title: Detecting React Native Apps in WebViews
+tags:
+ - React Native
+ - JavaScript
+ - Rome2rio
+ - Android
 ---
 
 On the project I'm working on at Rome2rio I'm currently implementing React Native's WebView component and hitting some issues with sending headers and User Agent's reliably. Sometimes User Agent's get rewritten by the website inside (which is very strange) and headers seem to only be applied on the first load and not all requests in the webview. After debugging the `ReactWebViewManager.java` file and getting nowhere, I've found an alternative way which is more reliable and more persistent. 
