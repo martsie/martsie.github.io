@@ -17,6 +17,9 @@ title: Home
         <li class="post-tags__tag">{{ tag }}</li>
       {% endfor %}
     </ul>
+    <p class="post-abstract">
+      {{ post.content | strip_html | truncatewords: 300 }}
+    </p>
   </div>
   {% endfor %}
 </div>
