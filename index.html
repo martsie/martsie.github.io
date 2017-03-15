@@ -18,8 +18,9 @@ title: Home
       {% endfor %}
     </ul>
     <p class="post-abstract">
-      {{ post.content | strip_html | truncatewords: 300 }}
+      {{ post.content | strip_html | truncatewords: 100 }}
     </p>
+    <a href="{{ post.url }}">Read more &rsaquo;</a>
   </div>
   {% endfor %}
 </div>
