@@ -30,6 +30,12 @@
       color: #666;
     }
   }
+  blockquote {
+    border-left: 5px solid #5bc0de;
+    padding: 5px 15px;
+    margin-left: 0;
+    background: #f5f5f5;
+  }
 }
 .article-header {
     min-height: 250px;

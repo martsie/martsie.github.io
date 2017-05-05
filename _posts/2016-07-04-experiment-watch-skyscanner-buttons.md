@@ -10,13 +10,13 @@ I’ve just spotted Skyscanner running experiments on their booking ticket selec
 
 ![](https://cdn-images-1.medium.com/max/1024/1*eMPbhkilf9ZjFTdd1BgvLw.png)
 
-#### Button states
+## Button states
 
 ![](https://cdn-images-1.medium.com/max/825/1*whcdaUKu6x-n-ipvo_jABg.png)
 
 The new pill shape design now has an active state and has a more subtle hover effect. What’s interesting is that the old hover effect was Skyscanner’s brand colour whereas the new hover effect is a variant of the booking-green they are using. If this feels like de-ja-vu it’s because I’ve made reference to green booking buttons before at [https://usabletravel.com/revamping-the-rome2rio-flight-booking-user-experience-c0cdacfbfc8b#4adb](https://usabletravel.com/revamping-the-rome2rio-flight-booking-user-experience-c0cdacfbfc8b#4adb).
 
-#### Tickets
+## Tickets
 
 ![](https://cdn-images-1.medium.com/max/695/1*N60WOZe2UtvBvTN28DL8_A.png)
 
