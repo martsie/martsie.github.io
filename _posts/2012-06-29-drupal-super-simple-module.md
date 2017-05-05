@@ -16,22 +16,22 @@ Before we start, we need to create a folder that has the same name our module wi
 ### The .info file
 The .info file is required by Drupal and exists solely to define your module. It doesn't run any code or make your module do anything, it just tells Drupal that your module exists and allows it to be shown in the module list. Your .info file needs to have the same filename as your module's folder (eg my_custom_module.info) and needs to contain the following variables:
 
--   **name**:\
+-   **name**
     What your module is called (ie *Views*, *Block*, *Node* etc etc).
--   **core**:\
+-   **core**
     The Drupal core version your module is compatible with (eg 6.x for Drupal 6 or 7.x for Drupal 7).
--   **files** (Drupal 7):\
+-   **files** (Drupal 7)
     An un-keyed array of include files required by your module (for classes) - this is only required in Drupal 7 and is useful when you want to extend classes.
 
 The following variables are optional:
 
--   **description**:\
+-   **description**
     A brief description of what your module actually does (e.g. *Creates a block in Drupal that lists the latest news posts*).
--   **package**:\
+-   **package**
     If you'd like to group your module in the same section as other modules on the module page you can put them in the same 'package'.
--   **dependencies**:\
+-   **dependencies**
     If your custom module depends on another Drupal module, core or contrib, list it here (use its machine name).
--   **stylesheets**:\
+-   **stylesheets**
     You can specify a stylesheet to include on every page whilst your module is enabled (though it may be better to only include a stylesheet when it's needed by using drupal_add_css).
 
 You can also create comments using a semicolon.
