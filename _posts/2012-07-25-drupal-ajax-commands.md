@@ -1,6 +1,7 @@
 ---
 layout: post
 title: AJAX commands in Drupal 7
+category: Development
 tags:
  - Drupal 7
  - PHP

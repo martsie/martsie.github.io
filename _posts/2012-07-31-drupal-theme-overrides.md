@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Theme override functions - beautify breadcrumbs, lists and form elements in Drupal 7
+category: Development
 tags:
  - Drupal 7
  - Theming

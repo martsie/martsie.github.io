@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Break out of the SimpleTest sandbox
+category: Development
 tags:
  - Drupal 7
  - Testing

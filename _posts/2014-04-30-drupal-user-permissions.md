@@ -1,6 +1,7 @@
 ---
 layout: post
 title: User permissions in Drupal
+category: Development
 tags:
  - Drupal 7
  - Security

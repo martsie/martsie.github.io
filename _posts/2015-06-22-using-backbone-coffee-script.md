@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Using Backbone.js with CoffeeScript
+category: Development
 tags:
  - CoffeeScript
  - Backbone

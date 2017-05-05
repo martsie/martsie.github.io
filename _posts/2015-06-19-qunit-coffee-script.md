@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Testing in QUnit with CoffeeScript
+category: Development
 tags:
  - CoffeeScript
  - Testing

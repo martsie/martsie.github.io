@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Real world JavaScript performance of large element lists
+category: Development
 tags:
  - JavaScript
  - Performance

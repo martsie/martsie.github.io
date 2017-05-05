@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Resetting a Drupal 7 module schema with Drush
+category: Development
 tags:
  - Drupal 7
  - Drush

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Drupal debugging&#58; Xdebug and Devel
+category: Development
 tags:
  - Drupal
  - PHP

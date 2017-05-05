@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Changing the page title with AJAX Commands in Drupal
+category: Development
 tags:
  - Drupal 7
  - AJAX

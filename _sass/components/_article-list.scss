@@ -1,0 +1,31 @@
+.article-list {
+  &__items {
+    display: flex;
+    flex-flow: column wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__item {
+    max-width: 400px;
+    padding: 50px;
+  }
+  &__menu {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 20%;
+    border-bottom: 1px solid #ddd;
+  }
+  &__menu-item {
+    display: inline-block;
+    padding: 30px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 20px;
+    color: #aaa;
+
+    &:hover,
+    &.active {
+      color: #333;
+    }
+  }
+}

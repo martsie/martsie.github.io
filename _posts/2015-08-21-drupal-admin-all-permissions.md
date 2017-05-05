@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Give all user permissions to the admin role in Drupal
+category: Development
 tags:
  - Drupal 7
  - Security

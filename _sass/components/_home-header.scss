@@ -1,0 +1,20 @@
+.home-header {
+  height: 260px;
+  background: #5bc0de;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__description {
+    margin: 0;
+    font-size: 20px;
+    color: white;
+    line-height: 2.2;
+    max-width: 50%;
+  }
+  &__emphasis {
+    color: #95989A;
+    background: white;
+    padding: 8px;
+  }
+}

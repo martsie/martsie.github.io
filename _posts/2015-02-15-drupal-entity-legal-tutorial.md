@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Entity Legal - Legal Document Management for Drupal
+category: Development
 tags:
  - Drupal 7
  - Open Source

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Super simple custom Drupal 7 module
+category: Development
 tags:
  - Drupal 7
  - PHP

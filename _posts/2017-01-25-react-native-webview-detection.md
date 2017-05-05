@@ -1,10 +1,12 @@
 ---
 layout: post
 title: Detecting React Native Apps in WebViews
+banner: images/articles/rn-webviews.jpg
+thumb: images/articles/rn-webviews-thumb.jpg
+category: Development
 tags:
  - React Native
  - JavaScript
- - Rome2rio
  - Android
 ---
 

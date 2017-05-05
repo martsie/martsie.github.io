@@ -1,0 +1,54 @@
+.article-abstract {
+  position: relative;
+  border: 1px solid transparent;
+
+  &:hover {
+    background-color: #f5f5f5;
+  }
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+  &__image {
+    height: 105px;
+    background: #eee;
+    margin-bottom: 10px;
+    background-repeat: none;
+    background-size: cover;
+  }
+  &__meta {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  &__title {
+    margin: 5px 0 0;
+    font-size: 21px;
+    font-weight: normal;
+  }
+  &__body {
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 0 0;
+  }
+  &__category {
+    font-weight: bold;
+  }
+  &__tags {
+  }
+  &__tag {
+    display: inline-block;
+    background: #5bc0de;
+    color: white;
+    padding: 5px 8px;
+    font-weight: 400;
+    border-radius: 2px;
+  }
+  &__date {
+    margin: 0 10px;
+  }
+}

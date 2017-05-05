@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Database independent Views 3 custom field handlers
+category: Development
 tags:
  - Drupal 7
  - PHP

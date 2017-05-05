@@ -1,20 +1,36 @@
 ---
 layout: default
 ---
-
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-meta">
-    <img src="/images/me.png" class="post-image">
-    <span class="post-date">{{ page.date | date_to_string }}, <a href="https://martsie.github.io/about/">Marton Bodonyi</a></span>
-    <ul class="post-tags">
-      {% for tag in page.tags %}
-        <li class="post-tags__tag">{{ tag }}</li>
-      {% endfor %}
-    </ul>
+<header class="article-header">
+  <div class="article__header-content">
+    <div class="container">
+      <div class="article-header__top">
+          <span class="article__category">{{ page.category }}</span> {{ page.date | date_to_string }}
+      </div>
+      <h1 class="article__title">{{ page.title }}</h1>
+    </div>
   </div>
-  {{ content }}
+  <div class="article-meta">
+    <div class="container article-meta__container">
+      <a href="/" class="article-meta__link"></a>
+      <img src="/images/me.png" class="article-meta__image" alt="Profile photo of Marton Bodonyi" />
+      <div class="article-meta__content">
+        <div class="article-meta__author">
+          by <strong>Marton Bodonyi</strong>
+        </div>
+        <div class="article-meta__byline">
+          Front-end developer - Melbourne, Australia
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="article">
+  <div class="container article__body">
+    {{ content }}
+  </div>
 </div>
+<div class="container">
 <div class="comments">
   <div id="disqus_thread"></div>
   <script>
@@ -34,16 +50,17 @@ layout: default
 </div>
 <div class="related">
   <h2>Related Posts</h2>
-  <ul class="related-posts">
-    {% for post in site.related_posts limit:3 %}
+  <ul class="related-articles">
+    {% for article in site.related_articles limit:3 %}
       <li>
         <h3>
-          <a href="{{ post.url }}">
-            {{ post.title }}
-            <small>{{ post.date | date_to_string }}</small>
+          <a href="{{ article.url }}">
+            {{ article.title }}
+            <small>{{ article.date | date_to_string }}</small>
           </a>
         </h3>
       </li>
     {% endfor %}
   </ul>
+  </div>
 </div>

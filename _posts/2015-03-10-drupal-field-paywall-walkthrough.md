@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Drupal Field Paywall walkthrough 
+category: Development
 tags:
  - Drupal 7
  - Module development

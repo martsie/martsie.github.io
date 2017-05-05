@@ -1,6 +1,7 @@
 ---
 layout: post
 title: How to use the $user->data property in Drupal 7
+category: Development
 tags:
  - Drupal 7
  - PHP
