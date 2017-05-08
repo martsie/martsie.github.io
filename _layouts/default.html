@@ -7,15 +7,28 @@
   <div class="main">
     {{ content }}
   </div>
-  <footer class="footer">
-    &copy; 2017 Marton Bodonyi
+  <footer class="section section--contact">
+    <h2 class="section__title">Contact me...</h2>
+    <div class="contact">
+      <div class="contact__left">
+        <img src="/images/me.png" alt="Photo of Marton Bodonyi" class="contact__profile" />
+      </div>
+      <div class="contact__right">
+        <h3>Marton Bodonyi</h3>
+        <p class="contact__living">UX / UI Developer and Consultant - Melbourne, Australia</p>
+        <a href="mailto:marty@codesidekick.com" class="contact__link">Email me</a>
+        <a href="https://in.linkedin.com/pub/marton-bodonyi/29/8bb/b06" class="contact__link">Linkedin</a>
+        <a href="https://twitter.com/codesidekick" class="contact__link">@codesidekick</a>
+        <a href="https://github.com/martsie" class="contact__link">Github</a>
+      </div>
+    </div>
   </footer>
   <script>
     (function (i, s, o, g, r, a, m) {
-    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-      (i[r].q = i[r].q || []).push(arguments)    
-}, i[r].l = 1 * new Date(); a = s.createElement(o),
-      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
     })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-90658324-1', 'auto');

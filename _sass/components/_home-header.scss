@@ -1,9 +1,12 @@
+@import '../variables';
+
 .home-header {
   height: 260px;
-  background: #5bc0de;
+  background: $primary;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
 
   &__description {
     margin: 0;
@@ -16,5 +19,10 @@
     color: #95989A;
     background: white;
     padding: 8px;
+  }
+  &__photo img {
+    border-radius: 50%;
+    max-height: 50%;
+    margin-right: 20px;
   }
 }

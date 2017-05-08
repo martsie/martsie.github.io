@@ -3,10 +3,13 @@ layout: default
 title: Home
 ---
 <header class="home-header">
+  <div class="home-header__photo">
+  <img src="/images/me.png" alt="Photo of Marton Bodonyi" />
+  </div>
 <p class="home-header__description">Hi I’m Marty, <span class="home-header__emphasis">front-end developer</span> , <span class="home-header__emphasis">UX consultant</span>      , and keen traveller. I work with <span class="home-header__emphasis">startups</span> and corporates, big and small,
   in <span class="home-header__emphasis">Melbourne</span> and around the world.</p>
 </header>
-<section class="article-list">
+<section class="article-list section section--blog">
   <!---
   <div class="article-list__menu">
     <a href="#" class="article-list__menu-item active">All</a>
@@ -17,6 +20,7 @@ title: Home
     <a href="#cv" class="article-list__menu-item">CV</a>
   </div>
   -->
+  <h2 class="section__title article-list__title">Recent blog articles...</h2>
 
   <div class="article-list__items">
     {% for post in site.posts %}
@@ -41,5 +45,33 @@ title: Home
     </div>
     </article>
     {% endfor %}
+  </div>
+</section>
+<section class="section section--tech">
+  <h2 class="section__title">I'm a specialist in...</h2>
+  <div class="tech">
+    <span class="tech__item">React JS</span>
+    <span class="tech__item">Front-end development</span>
+    <span class="tech__item">A/B Testing and experiment driven development</span>
+    <span class="tech__item">ES2015</span>
+    <span class="tech__item">Native mobile development</span>
+    <span class="tech__item">ReactNative</span>
+    <span class="tech__item">Drupal</span>
+    <span class="tech__item">UX</span>
+    <span class="tech__item">Google Analytics</span>
+  </div>
+</section>
+<section class="section section--partners">
+  <h2 class="section__title">I've worked with...</h2>
+  <div class="partners">
+    <span><img src="/images/logos/rome2rio.png" alt="Rome2rio" /></span>
+    <span><img src="/images/logos/ewb.jpg" alt="Engineers Without Borders Australia" /></span>
+    <span><img src="/images/logos/news.jpeg" alt="News Corp Australia" /></span>
+    <span><Img src="/images/logos/vgso.jpg" alt="Department of Justice: Victorian Government Solicitors Office" /></span>
+    <span><img src="/images/logos/catch.jpeg" alt="Catch Digital London" /></span>
+    <span><img src="/images/logos/tmw.jpg" alt="TMW London" /></span>
+    <span><img src="/images/logos/icon.jpg" alt="Icon Inc Melbourne" /></span>
+    <span><img src="/images/logos/itomic.jpg" alt="Itomic" /></span>
+    <span><img src="/images/logos/crocodile.jpeg" alt="The Crocodile London" /></span>
   </div>
 </section>

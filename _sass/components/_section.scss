@@ -1,0 +1,56 @@
+@import '../variables';
+
+.section {
+    padding: 30px;
+    position: relative;
+
+    &__title {
+        color: white;
+        background: $primary;
+        display: inline-block;
+        line-height: 1;
+        padding: 10px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+
+    &:before {
+        content: " ";
+        width: 0;
+        height: 0;
+        border-left: 40px solid transparent;
+        border-right: 40px solid transparent;
+        border-top: 20px solid $primary;
+        position: absolute;
+        top: 0;
+        right: 20%;
+        z-index: 2;
+        margin-top: -2px;
+    }
+
+    &--blog {
+        background: white;
+    }
+
+    &--partners {
+        background: white;
+
+        &:before {
+            border-top-color: #ebebeb;
+        }
+    }
+    &--tech {
+        background: #ebebeb;
+
+        &:before {
+            border-top-color: white;
+        }
+    }
+    &--contact {
+        background: #ebebeb;
+        
+        &:before {
+            border-top-color: white;
+        }
+    }
+}
