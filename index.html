@@ -9,18 +9,8 @@ title: Home
 <p class="home-header__description">Hi I’m Marty, <span class="home-header__emphasis">front-end developer</span> , <span class="home-header__emphasis">UX consultant</span>      , and keen traveller. I work with <span class="home-header__emphasis">startups</span> and corporates, big and small,
   in <span class="home-header__emphasis">Melbourne</span> and around the world.</p>
 </header>
-<section class="article-list section section--blog">
-  <!---
-  <div class="article-list__menu">
-    <a href="#" class="article-list__menu-item active">All</a>
-    <a href="#dev" class="article-list__menu-item">Development</a>
-    <a href="#ux" class="article-list__menu-item">UX</a>
-    <a href="#speaking" class="article-list__menu-item">Speaking</a>
-    <a href="#os" class="article-list__menu-item">Open Source</a>
-    <a href="#cv" class="article-list__menu-item">CV</a>
-  </div>
-  -->
-  <h2 class="section__title article-list__title">Recent blog articles...</h2>
+<section class="article-list section section--blog js-section-blog is--brief">
+  <h2 class="section__title article-list__title">I've written...</h2>
 
   <div class="article-list__items">
     {% for post in site.posts %}
@@ -29,7 +19,7 @@ title: Home
       <div class="article-abstract_content">
       <div class="article-abstract__meta">
         <div class="article-abstract__tags">
-            <span class="article-abstract__category">DEV</span>
+            <span class="article-abstract__category">{{ post.category }}</span>
             <time class="article-abstract__date">{{ post.date | date_to_string }}</time>
           {% for tag in post.tags %}
             <span class="article-abstract__tag">{{ tag }}</span>
@@ -46,6 +36,7 @@ title: Home
     </article>
     {% endfor %}
   </div>
+  <button class="article-list__more js-blog-show-more" type="button">Show more...</button>
 </section>
 <section class="section section--tech">
   <h2 class="section__title">I'm a specialist in...</h2>
