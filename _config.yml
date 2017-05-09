@@ -2,7 +2,7 @@
 highlighter:      rouge
 
 # Permalinks
-permalink:        /:year/:month/:day/:title
+permalink:        /:year/:month/:day/:title/
 
 # Setup
 title:            Marton Bodonyi
