@@ -50,7 +50,7 @@ Reviews are essentially miniature stories. Better yet each review transports the
 
 ![](https://cdn-images-1.medium.com/max/1024/1*SjBUQqtWOylws-bFPuQgMA.png)
 
-The homepage of HostelWorld takes a similar approach to Airbnb sans-video. If you can get the right photograph you can tell a pretty full story, one that is partly the product of the scene you show and partly the product of the users imagination. Seeing HostelWorld’s ‘Meet the World’ home page photograph definitely takes me back to all the crazy adventures I’ve had at hostels around the world and gets me excited about my next trip. I**t’s a very similar story to Airbnb but more youth targeted with less coffee’s and gourmet sandwiches and more picnics on cement roofs with beer bottles hidden out of shot**.
+The homepage of HostelWorld takes a similar approach to Airbnb sans-video. If you can get the right photograph you can tell a pretty full story, one that is partly the product of the scene you show and partly the product of the users imagination. Seeing HostelWorld’s ‘Meet the World’ home page photograph definitely takes me back to all the crazy adventures I’ve had at hostels around the world and gets me excited about my next trip. **It’s a very similar story to Airbnb but more youth targeted with less coffee’s and gourmet sandwiches and more picnics on cement roofs with beer bottles hidden out of shot**.
 
 ## Conclusion
 
